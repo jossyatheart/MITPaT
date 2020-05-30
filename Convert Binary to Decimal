@@ -11,3 +11,23 @@ Convert 11101 to Decimal
     16   +     8    +    4    +     0      +    1
             =29
  
+Java Program to convert Binary to Decimal
+import java.util.Scanner;
+public class BinToDecimal{
+public static void main(String[] args) 
+{
+  Scanner sc = new Scanner(System.in);// assign to memory the value scanner
+  long binaryNumber, decimalNumber = 0, j = 1, remainder; // the base are initialized 
+  System.out.print("Input a binary number: "); // input the binary number to be converted 
+  binaryNumber = sc.nextLong();
+ 
+  while (binaryNumber != 0) 
+  {
+   remainder = binaryNumber % 10;   // this return the right-most and last digit
+   decimalNumber = decimalNumber + remainder * j;
+   j = j * 2;
+   binaryNumber = binaryNumber / 10;  // this operation basically cut of the last digit
+  }
+  System.out.println("Decimal Number: " + decimalNumber);
+}
+}
