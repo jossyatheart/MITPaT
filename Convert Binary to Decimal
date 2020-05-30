@@ -1,0 +1,13 @@
+Algorithm to convert from Binary  to Decimal:
+Converting from binary to decimal involves multiplying the value of each digit (i.e. 1 or 0) by the value of the placeholder in the number
+  1.   Write down the number.
+Starting with the LSB, multiply the digit by the value of the place holder.
+  3.   Continue doing this until you reach the MSB.
+Add the results.
+  
+Convert 11101 to Decimal
+1 * 24  + 1* 23 + 1* 22 + 0 * 21 + 1 * 20
+1 * 16+  1* 8  + 1* 4  + 0 * 2   + 1* 1
+    16   +     8    +    4    +     0      +    1
+            =29
+ 
