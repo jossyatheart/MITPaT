@@ -1,0 +1,19 @@
+Algorithm to convert from Decimal to Binary:
+Write down the decimal number.
+Divide the number by 2.
+Write the result underneath.
+Write the remainder on the right hand side. This will be 0 or 1.
+Divide the result of the division by 2 and again write down the remainder.
+Continue dividing and writing down remainders until the result of the division is 0.
+The most significant bit (MSB) is at the bottom of the column of remainders and the least significant bit (LSB) is at the top.
+Read the series of 1s and 0s on the right from the bottom up. This is the binary equivalent of the decimal number.
+Successive division by 2
+2  29           Remainders
+2  14                 1      LSB
+2  7                    0  
+2  3                    1
+2  1                    1
+    0                    1     MSB
+                          Read the remainders from the bottom up.
+29 decimal = 11101 binary 
+ 
